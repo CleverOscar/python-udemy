@@ -17,6 +17,19 @@ print('Challenges File Invoked \n ')
 
 #Convert fahrenheit to celcius
 
-fah = float(input('Enter tempature here:'))
-cel = (fah - 32) * 5/9
-print(fah,'Fahrenheit in Celsius is:2',cel)
+#fah = float(input('Enter tempature here:'))
+#cel = (fah - 32) * 5/9
+#print(fah,'Fahrenheit in Celsius is:2',cel)
+
+#Add two intergers to make one
+
+#x = int(input('Enter a number for x: '))
+#y = int(input('Enter a number for y: '))
+#
+#print(int(x + y))
+
+slices = 4 * 4;
+
+pizza = 6;
+
+print(round(slices / pizza))
