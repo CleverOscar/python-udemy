@@ -15,20 +15,20 @@ lower number to the higher number. Print the results to the screen.
 #A script that prints out a list between two numbers from least to greatest
 
 #ask the user to input two numbers from 1 - 100
-num1 = int(input('Please enter a number between 1 - 100: '))
-num2 = int(input('Please enter a number between 1 - 100: '))
-#while loop checks the numbers being input by the user
-while num1 < 0 or num2 < 0 or num1 > 100 or num2 > 100 or num1 == num2:
-    print('Numbers must be different values between 1 and 100, try again')
-    num_1 = int(input('Please enter a number between 1-100:> '))
-    num_2 = int(input('Please enter a number between 1-100:> '))
-
-if num1 < num2:
-    for i in range(num1, num2+1):
-        print(i, end=' ')
-else:
-    for i in range(num2, num1+1):
-        print(i, end=' ')
+#num1 = int(input('Please enter a number between 1 - 100: '))
+#num2 = int(input('Please enter a number between 1 - 100: '))
+##while loop checks the numbers being input by the user
+#while num1 < 0 or num2 < 0 or num1 > 100 or num2 > 100 or num1 == num2:
+#    print('Numbers must be different values between 1 and 100, try again')
+#    num_1 = int(input('Please enter a number between 1-100:> '))
+#    num_2 = int(input('Please enter a number between 1-100:> '))
+#
+#if num1 < num2:
+#    for i in range(num1, num2+1):
+#        print(i, end=' ')
+#else:
+#    for i in range(num2, num1+1):
+#        print(i, end=' ')
 
 
 '''
@@ -37,6 +37,24 @@ Ask the user to input a string and then print it out to the screen in
 reverse order (use a for loop).
 '''
 
+word = input('Please type in any word and watch it print out in reverse:> ')
+
+#def reverse(s):
+#    string = ' '
+#    for i in s:
+#        string = i + s
+#    return string
+#
+#print(reverse(s))
+
+
+word = str(input('Please type in any word and watch it print out in reverse:> '))
+reverse_string = ' '
+
+for char in word:
+    reverse_string = char + reverse_string
+    
+print(reverse_string)
 
 
 '''
